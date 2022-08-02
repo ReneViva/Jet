@@ -1,0 +1,35 @@
+var ObjectSpeeds = 0.1
+var rockX = Math.random() * innerWidth - 50
+var rockY = 00
+function rocks(params) {
+    requestAnimationFrame(rocks)
+    c.clearRect(rockX, rockY - 10, 110, 10)
+    c.drawImage(rock, rockX, rockY, 100, 100)
+    // c.fillStyle = 'black'
+    // c.fillRect(stuffs, rockY - 1, 100, 1)
+    rockY += ObjectSpeeds
+}
+
+
+
+
+
+
+var evilShipX = Math.random() * innerWidth
+var evilShipY = 00
+function EvilsHIP(params) {
+    requestAnimationFrame(EvilsHIP)
+    c.clearRect(evilShipX, evilShipY - 10, 110, 10)
+    c.drawImage(evilHugeShip, evilShipX, evilShipY, 300, 300)
+    // c.fillStyle = 'black'
+    // c.fillRect(stuffs, evilShipY - 1, 100, 1)
+    evilShipY += ObjectSpeeds
+}
+
+
+EvilsHIP()
+
+
+var rocks_jets_enemys = [rocks,]
+
+rocks_jets_enemys[0]()
